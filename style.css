@@ -362,6 +362,18 @@ a:hover {
     z-index: 2;
 }
 
+#contact-banner {
+    font-size: 14px;
+}
+
+.contact-list {
+    margin-top: 30px;
+}
+
+.contact-list li {
+    list-style-type: none;
+}
+
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
