@@ -287,6 +287,10 @@ a:hover {
     font-size: 32px;
 }
 
+#bloc-5-cta {
+    position: relative;
+}
+
 .navbar {
     margin-bottom: 0;
     z-index: 1;
@@ -372,6 +376,7 @@ a:hover {
 
 .contact-list li {
     list-style-type: none;
+    color: #000000;
 }
 
 @media (min-width: 768px) {
@@ -659,8 +664,7 @@ h5,
 h6,
 p,
 label,
-.btn,
-a {
+.btn {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
@@ -783,20 +787,20 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #BD3E21;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #ffc9b2!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #BD3E21;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #FC4D02!important;
     color: #FFFFFF!important;
 }
 
@@ -813,7 +817,7 @@ h4 {
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color: white!important;
 }
 
 .icon-dark-slate-blue {
