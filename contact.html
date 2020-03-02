@@ -9,7 +9,7 @@
     <meta name="description" content="Contactez notre agence via le formulaire de contact.">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" defer>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 
     <!-- Open Graph-->
     <meta property="og:type" content="website">
@@ -22,14 +22,14 @@
 
     <!-- Script JS -->
     <script src="./js/jquery-2.1.0.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/blocs.min.js"></script>
-    <script src="https://kit.fontawesome.com/52500bdd02.js" crossorigin="anonymous" defer></script>
-    <script src="./js/jquery.touchSwipe.min.js" defer></script>
-    <script src="./js/gmaps.min.js" defer></script>
+    <script async src="./js/bootstrap.min.js"></script>
+    <script async src="./js/blocs.min.js"></script>
+    <!-- Script JS END -->
+
+    <script defer src="https://kit.fontawesome.com/52500bdd02.js" crossorigin="anonymous"></script>
 
     <!-- Google analytics ID -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159120903-1"></script>
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-159120903-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -100,40 +100,41 @@
                     <div class="col-sm-offset-3 col-sm-6">
                         <form id="form_1" novalidate success-msg="Votre message a été envoyé." fail-msg="Désolé il semblerait que notre service mail ne réponde pas. Désolé pour cet inconvénient!">
                             <div class="form-group">
-                                <label>
+                                <label for="name">
 							Nom
 						</label>
-                                <input id="name" class="form-control" required />
+                                <input id="name" name="nom" class="form-control" type="text" autofocus="autofocus" required />
                             </div>
                             <div class="form-group">
-                                <label>
+                                <label for="email">
 							Adresse email
 						</label>
-                                <input id="email" class="form-control" type="email" required />
+                                <input id="email" name="mail" class="form-control" type="email" required />
                             </div>
                             <div class="form-group">
-                                <label>
+                                <label for="known">
 							Comment nous avez-vous connu ?
 						</label>
-                                <input class="form-control" type="email" required id="input_504" />
+                                <input id="known" name="connu" type="text" class="form-control" required />
                             </div>
                             <div class="form-group">
-                                <label>
-							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+                                <label for="project">
+							Brief de votre projet (Ajoutez autant de détails que nécessaire)
+                        </label>
+                                <textarea id="project" name="projet" class="form-control" rows="4" cols="50" required></textarea>
                             </div>
                             <button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
-					</button>
+					        </button>
                         </form>
                     </div>
-                    <div class="col-sm-12 text-center contact-list">
+                    <address class="col-sm-12 text-center contact-list">
                         <ul>
                             <li>contact@lachouetteagence.com</li>
                             <li>2 place Sathonay 69001 Lyon</li>
                             <li>Ouvert de 9h à 18h, du lundi au vendredi</li>
                         </ul>
-                    </div>
+                    </address>
                 </div>
             </div>
         </section>
@@ -142,29 +143,23 @@
         <!-- Footer - bloc-8 -->
         <footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
             <div class="container bloc-sm">
-                <p class="text-center white">
-                    La chouette agence - Agence web basée à Lyon.<br>
-                </p>
-                <div class="row">
-                    <div class="col-sm-offset-3 col-sm-9">
-                        <div class="col-sm-2">
-                            <div class="text-center">
-                                <a class="social" href="index.html"><span class="fab fa-twitter icon-md"></span></a>
+                <div class="col-sm-12">
+                    <p class="text-center white">
+                        La chouette agence - Agence web basée à Lyon.<br>
+                    </p>
+                    <div class="row row-no-gutters social">
+                        <div class="col-sm-offset-9 col-sm-12">
+                            <div class="col-sm-6 text-center">
+                                <a class="social" href="index.html" title="twitter"><span class="fab fa-twitter icon-md"> Twitter</span></a>
                             </div>
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="text-center">
-                                <a class="social" href="index.html"><span class="fab fa-facebook icon-md"></span></a>
+                            <div class="col-sm-6 text-center">
+                                <a class="social" href="index.html" title="facebook"><span class="fab fa-facebook icon-md"> Facebook</span></a>
                             </div>
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="text-center">
-                                <a class="social" href="index.html"><span class="fab fa-dribbble icon-md"></span></a>
+                            <div class="col-sm-6 text-center">
+                                <a class="social" href="index.html" title="dribbble"><span class="fab fa-dribbble icon-md"> Dribble</span></a>
                             </div>
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="text-center">
-                                <a class="social" href="index.html"><span class="fab fa-instagram icon-md"></span></a>
+                            <div class="col-sm-6 text-center">
+                                <a class="social" href="index.html" title="instagram"><span class="fab fa-instagram icon-md"> Instagram</span></a>
                             </div>
                         </div>
                     </div>
@@ -175,7 +170,6 @@
 
     </main>
     <!-- Principal conteneur END -->
-
 
 </body>
 

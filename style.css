@@ -303,6 +303,7 @@ a:hover {
     font-weight: normal;
     font-weight: 600;
     line-height: 44px;
+    margin-left: 10px;
 }
 
 .navbar-brand img {
@@ -342,8 +343,8 @@ a:hover {
 }
 
 .navbar-toggle {
-    margin: 10px 10px 0 0;
     border: 0px;
+    margin: 10px 10px 0 0;
 }
 
 .navbar-toggle:hover {
